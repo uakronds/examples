@@ -6,7 +6,7 @@
 
 int main() {
   LList<int> x;
-  /*
+  
   for (auto num : { 1, 2, 3, 4, 5 })
     x.insert(num);
 
@@ -17,8 +17,8 @@ int main() {
   x.display();
   LList<int> y(x);
 
-  y.head->data = 30;
+  y.reverse();
   x.display();
   y.display();
-  */
+  
 }
