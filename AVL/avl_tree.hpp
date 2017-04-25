@@ -14,6 +14,7 @@ struct AVLNode {
 
   AVLNode(T t) : data(t) {}
   AVLNode(T t, AVLNode<T>* p) : data(t), parent(p) {}
+  ~AVLNode() { delete left; delete right; }
 };
 
 template <class T>
@@ -31,7 +32,7 @@ public:
   void serialize(AVLNode<T>*, std::stringstream&);
 public:
   AVLTree() {}
-  ~AVLTree() {}
+  ~AVLTree() { delete root; }
 
   void insert(T);
 

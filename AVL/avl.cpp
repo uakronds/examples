@@ -18,5 +18,5 @@ int main() {
     avl->insert(x);
 
   std::cout << avl->serialize() << std::endl;
-
+  delete avl;
 }
