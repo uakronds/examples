@@ -6,11 +6,9 @@ int main() {
 
 
   Graph graph(7);
-  
+
   graph.insert_nodes({ 'C', 'B', 'G', 'A', 'H', 'I', 'F' });
-  graph.display();
   
-  /*
   graph.insert_edge('C', 'B', 9);
   graph.insert_edge('C', 'F', 2);
   graph.insert_edge('B', 'G', 3);
@@ -23,8 +21,8 @@ int main() {
   graph.insert_edge('H', 'I', 1);
   graph.insert_edge('I', 'F', 7);
   
-  graph.print_matrix();
-
-  graph.BFS('A');
-  */
+  graph.display();
+  
+  graph.dijkstra('A', true);
+  
 }
